@@ -18,7 +18,6 @@ Tp1_gestion_notes/
 │
 ├── main.py # Application principale (interface Tkinter)
 ├── README.md # Documentation du projet
-└── requirements.txt # Bibliothèques externes nécessaires (optionnel)
 
 
 ---
