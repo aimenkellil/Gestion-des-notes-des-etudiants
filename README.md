@@ -6,7 +6,7 @@ ainsi que de faire des analyses telles que le calcul de moyennes, la génératio
 
 ---
 
-## Structure du projet
+## Structure du projet de gestion des etudiants
 ```
 Gestion-des-notes-des-etudiants/
 ├── .idea/                    # Configuration de l'IDE (VS Code, PyCharm, etc.)
