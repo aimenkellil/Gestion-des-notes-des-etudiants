@@ -1,0 +1,48 @@
+{
+    "1": {
+        "Mathematique": [
+            19.0
+        ],
+        "Physique": [
+            14.0
+        ],
+        "Informatique": [
+            18.0
+        ],
+        "Francais": [],
+        "Anglais": [
+            11.0
+        ]
+    },
+    "2": {
+        "Mathematique": [
+            20.0
+        ],
+        "Physique": [
+            20.0
+        ],
+        "Informatique": [
+            20.0
+        ],
+        "Francais": [
+            20.0
+        ],
+        "Anglais": [
+            20.0
+        ]
+    },
+    "3": {
+        "Mathematique": [],
+        "Physique": [],
+        "Informatique": [],
+        "Francais": [],
+        "Anglais": []
+    },
+    "4": {
+        "Mathematique": [],
+        "Physique": [],
+        "Informatique": [],
+        "Francais": [],
+        "Anglais": []
+    }
+}
