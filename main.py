@@ -9,45 +9,6 @@ MATIERES = ["Mathematique", "Physique", "Informatique", "Francais", "Anglais"]
 etudiants = {}  # {id: (nom, prénom)}
 notes = {}      # {id: {matière: [note1, note2, ...]}}
 
-def choisir_matiere_gui():
-    """Fenêtre popup pour choisir une matière dans la liste"""
-    popup = tk.Toplevel()
-    popup.title("Choisir une matière")
-
-    var = tk.StringVar(popup)
-    var.set(MATIERES[0])  # Matière sélectionnée par défaut
-
-    tk.Label(popup, text="Choisissez une matière :").pack(pady=5)
-    option_menu = tk.OptionMenu(popup, var, *MATIERES)
-    option_menu.pack(pady=5)
-
-    result = {}
-
-    def confirmer():
-        result["matiere"] = var.get()
-        popup.destroy()
-
-    tk.Button(popup, text="Valider", command=confirmer).pack(pady=5)
-    popup.wait_window()  # Attendre que l'utilisateur ferme la fenêtre
-    return result.get("matiere")
-
-# --- Fonctions pour charger et sauvegarder les données ---
-
-def charger_donnees():
-    global etudiants, notes
-    try:
-        with open("etudiants.json", "r") as f:
-            etudiants.update(json.load(f))
-        with open("notes.json", "r") as f:
-            notes.update(json.load(f))
-    except FileNotFoundError:
-        pass
-
-def sauvegarder_donnees():
-    with open("etudiants.json", "w") as f:
-        json.dump(etudiants, f, indent=4)
-    with open("notes.json", "w") as f:
-        json.dump(notes, f, indent=4)
 
 
 # --- Fonctions pour la gestion des étudiants ---
@@ -184,6 +145,45 @@ def classement_etudiants_gui():
     messagebox.showinfo("Classement", classement)
 
 # --- Interface graphique principale ---
+def choisir_matiere_gui():
+    """Fenêtre popup pour choisir une matière dans la liste"""
+    popup = tk.Toplevel()
+    popup.title("Choisir une matière")
+
+    var = tk.StringVar(popup)
+    var.set(MATIERES[0])  # Matière sélectionnée par défaut
+
+    tk.Label(popup, text="Choisissez une matière :").pack(pady=5)
+    option_menu = tk.OptionMenu(popup, var, *MATIERES)
+    option_menu.pack(pady=5)
+
+    result = {}
+
+    def confirmer():
+        result["matiere"] = var.get()
+        popup.destroy()
+
+    tk.Button(popup, text="Valider", command=confirmer).pack(pady=5)
+    popup.wait_window()  # Attendre que l'utilisateur ferme la fenêtre
+    return result.get("matiere")
+
+# --- Fonctions pour charger et sauvegarder les données ---
+
+def charger_donnees():
+    global etudiants, notes
+    try:
+        with open("etudiants.json", "r") as f:
+            etudiants.update(json.load(f))
+        with open("notes.json", "r") as f:
+            notes.update(json.load(f))
+    except FileNotFoundError:
+        pass
+
+def sauvegarder_donnees():
+    with open("etudiants.json", "w") as f:
+        json.dump(etudiants, f, indent=4)
+    with open("notes.json", "w") as f:
+        json.dump(notes, f, indent=4)
 
 def lancer_interface_graphique():
     charger_donnees()
