@@ -1,5 +1,8 @@
 # Gestion-des-notes-des-etudiants
-📚 Ce projet a pour but de développer une application Python permettant de gérer des étudiants et leurs notes, avec une interface graphique utilisant **Tkinter**. L'application permet d'ajouter, supprimer, modifier et afficher des étudiants et leurs notes, ainsi que de faire des analyses telles que le calcul de moyennes, la génération de bulletins et le classement général.
+📚 Ce projet a pour but de développer une application Python permettant de gérer des étudiants et leurs notes, 
+avec une interface graphique utilisant **Tkinter**. L'application permet d'ajouter, supprimer, modifier et afficher des étudiants et leurs notes, 
+ainsi que de faire des analyses telles que le calcul de moyennes, la génération de bulletins et le classement général.
+
 
 ---
 
@@ -85,6 +88,8 @@ JSON (stockage des données)
 
 🧑‍💼 Auteurs
 👤 Groupe 1-Npower-2025
+👤 Groupe 2-Npower-2025
+👤 Groupe 3-Npower-2025
 
 
 Ce projet a été réalisé dans le cadre du cours AD à Npower.
